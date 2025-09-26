@@ -1,0 +1,86 @@
+/* CSS styling for headline */
+.topImage {
+  background-image: url(../Images/topbillede.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  min-height: 600px;
+  padding: 250px;
+  transition: 0.3s;
+  }
+
+.topImage h1 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-size: 70px;
+  color: #ffffff;
+  line-height: 1;
+  margin-bottom: 15px;
+  white-space: nowrap;
+}
+
+.topImage h3 {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  white-space: nowrap;
+}
+
+.topImageButton button {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  background-color: #ffffff;
+  color:  #000000;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.topImageButton button:hover {
+  background-color: lightgray;
+}
+
+
+
+@media screen and (max-width: 1935px) {
+  .topImage {
+    background-size: unset;
+  }
+}
+
+@media screen and (max-width: 1075px) {
+  .topImage {
+    padding: 150px;
+    transition: 0.3s;
+  }
+  .topImage h1 {
+    font-size: 50px;
+  }
+}
+
+
+/* Screen width adaption */
+@media screen and (max-width: 775px) {
+  .topImage {
+    padding: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+  }
+  .topImage h1 {
+    white-space: wrap;
+    text-align: center;
+  }
+  .topImage h3 {
+    white-space: wrap;
+    text-align: center;
+  }
+  .topImageButton {
+    display: flex;
+    justify-content: center;
+  }
+}

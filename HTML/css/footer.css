@@ -1,0 +1,73 @@
+/* CSS styling for footer */
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+.footer ul {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  list-style-type: none;
+  min-width: 300px;
+  transition: 0.3s;
+}
+
+.footer ul li h1 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+.footer ul li h3 {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.footer ul li h4 {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  line-height: 1.2;
+  padding-bottom: 10px;
+}
+
+.footer ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.roosterInfo {
+  padding-bottom: 10px;
+}
+
+.socials {
+  display: flex;
+  justify-content: left;
+  padding-top: 30px;
+}
+
+.socials img {
+  padding: 5px;
+  width: 35px;
+  cursor: pointer;
+}
+
+
+/* Screen width adaption */
+@media screen and (max-width: 900px) {
+  .footer {
+    padding-top: 0;
+  }
+  .footer ul {
+    padding-bottom: 50px;
+    transition: 0.3s;
+  }
+}

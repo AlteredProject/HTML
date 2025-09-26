@@ -1,0 +1,85 @@
+/* CSS styling for split section 1 */
+.splitSection1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 180px;
+  padding-bottom: 180px;
+  transition: 0.3s;
+}
+
+.splitSection1 ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 30px;
+}
+
+.splitSection1 ul li {
+  padding-left: 30px;
+  padding-right: 30px;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.splitSection1 ul li img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.splitSection1 ul li h1 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-size: 54px;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.splitSection1 ul li h5 {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.splitSection1 ul li button {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  margin-top: 32px;
+  padding: 12px 42px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.splitSection1 ul li button:hover {
+  background-color: lightgray;
+  color: #000000;
+}
+
+
+/* Screen width adaption */
+@media screen and (max-width: 1025px) {
+  .splitSection1 {
+    padding-top: 60px;
+  padding-bottom: 60px;
+  }
+
+  .splitSection1 ul {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .splitSection1 ul li {
+    padding: 30px;
+    border: none;
+  }
+}

@@ -1,0 +1,94 @@
+/* CSS styling for navigation bar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  padding-left: 120px;
+  padding-right: 120px;
+  transition: 0.3s;
+}
+
+.navbar img {
+  height: 70px;
+  cursor: pointer;
+}
+
+.navbar ul {
+  font-family: "Poppins", serif;
+  font-size: 20px;
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #000000;
+  padding: 5px 10px;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+.navbar ul li a:hover {
+  background-color: lightgray;
+  border-radius: 5px;
+}
+
+.navbar button {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+.navbar button:hover {
+  background-color: lightgray;
+  color: #000000;
+}
+
+
+/* Screen width adaption */
+@media screen and (max-width: 1430px) {
+  .navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: 0.3s;
+  }
+}
+
+@media screen and (max-width: 1275px) {
+  .navbar img {
+    height: 40px;
+  }
+  .navbar ul {
+    gap: 10px;
+  }
+  .navbar ul li a {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+  .navbar button {
+    padding: 8px 10px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

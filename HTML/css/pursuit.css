@@ -1,0 +1,60 @@
+/* CSS styling for yellow pursuit section */
+.pursuit {
+  background-color: #f8dd9f;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 180px;
+  padding-bottom: 180px;
+  transition: 0.3s;
+}
+
+.pursuit h1 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-size: 58px;
+  margin-bottom: 10px;
+}
+
+.pursuit h4 {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.pursuit button {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 15px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 10px 32px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pursuit button:hover {
+  background-color: lightgray;
+  color: #000000;
+}
+
+
+/* Screen width adaption */
+@media screen and (max-width: 900px) {
+  .pursuit {
+    padding: 10px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .pursuit h1 {
+    font-size: 30px;
+    transition: 0.3s;
+  }
+}
